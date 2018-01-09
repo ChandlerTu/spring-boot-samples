@@ -1,0 +1,7 @@
+yml:
+  name: yml name
+  utf8: yml 中文
+  properties: yml properties
+  servers:
+  - yml list properties 0
+  - yml list properties 1
