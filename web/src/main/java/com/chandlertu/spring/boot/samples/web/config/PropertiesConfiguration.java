@@ -1,4 +1,4 @@
-package com.chandlertu.spring.boot.samples.config;
+package com.chandlertu.spring.boot.samples.web.config;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

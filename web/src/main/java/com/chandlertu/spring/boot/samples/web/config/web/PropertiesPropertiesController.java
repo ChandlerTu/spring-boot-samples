@@ -1,6 +1,6 @@
-package com.chandlertu.spring.boot.samples.config.web;
+package com.chandlertu.spring.boot.samples.web.config.web;
 
-import com.chandlertu.spring.boot.samples.config.PropertiesProperties;
+import com.chandlertu.spring.boot.samples.web.config.PropertiesProperties;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
