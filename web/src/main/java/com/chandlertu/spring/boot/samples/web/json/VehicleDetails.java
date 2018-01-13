@@ -1,33 +1,52 @@
 package com.chandlertu.spring.boot.samples.web.json;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import org.springframework.util.Assert;
+
+/**
+ * Details of a single vehicle.
+ *
+ * @author Phillip Webb
+ */
 public class VehicleDetails {
 
-  private String make;
+  private final String make;
 
-  private String model;
+  private final String model;
 
-  public VehicleDetails() {
-  }
-
-  public VehicleDetails(String make, String model) {
+  @JsonCreator
+  public VehicleDetails(@JsonProperty("make") String make, @JsonProperty("model") String model) {
+    Assert.notNull(make, "Make must not be null");
+    Assert.notNull(model, "Model must not be null");
     this.make = make;
     this.model = model;
   }
 
   public String getMake() {
-    return make;
-  }
-
-  public void setMake(String make) {
-    this.make = make;
+    return this.make;
   }
 
   public String getModel() {
-    return model;
+    return this.model;
   }
 
-  public void setModel(String model) {
-    this.model = model;
+  @Override
+  public int hashCode() {
+    return this.make.hashCode() * 31 + this.model.hashCode();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == this) {
+      return true;
+    }
+    if (obj == null || obj.getClass() != getClass()) {
+      return false;
+    }
+    VehicleDetails other = (VehicleDetails) obj;
+    return this.make.equals(other.make) && this.model.equals(other.model);
   }
 
 }
