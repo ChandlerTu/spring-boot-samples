@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class YmlUtf8Controller {
 
-  @Value("${yml.utf8}")
+  @Value("${ymlUtf8}")
   private String utf8;
 
   @GetMapping("/ymlUtf8")

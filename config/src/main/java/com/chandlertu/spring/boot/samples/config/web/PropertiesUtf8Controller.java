@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PropertiesUtf8Controller {
 
-  @Value("${properties.utf8}")
+  @Value("${propertiesUtf8}")
   private String utf8;
 
   @GetMapping("/propertiesUtf8")
