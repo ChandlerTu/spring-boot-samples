@@ -1,13 +1,13 @@
-package com.chandlertu.spring.boot.samples.web.config;
+package com.chandlertu.spring.boot.samples.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConfigApplication {
+public class WebApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(ConfigApplication.class, args);
+    SpringApplication.run(WebApplication.class, args);
   }
 
 }

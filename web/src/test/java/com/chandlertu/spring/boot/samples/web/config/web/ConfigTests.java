@@ -1,4 +1,4 @@
-package com.chandlertu.spring.boot.samples.config.web;
+package com.chandlertu.spring.boot.samples.web.config.web;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

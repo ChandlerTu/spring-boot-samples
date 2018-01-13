@@ -1,4 +1,4 @@
-package com.chandlertu.spring.boot.samples.config;
+package com.chandlertu.spring.boot.samples.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
