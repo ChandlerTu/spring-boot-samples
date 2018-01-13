@@ -9,8 +9,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>config</module>
     <module>core</module>
+    <module>web</module>
   </modules>
 
 </project>
