@@ -1,2 +1,6 @@
 .settings
 .project
+data/.settings
+data/target
+data/.classpath
+data/.project
