@@ -43,4 +43,16 @@ public class HashOperationsTests {
     assertThat(result2).isEqualTo(2);
   }
 
+  @Test
+  public void get() {
+    String key = "key";
+    String hashKey = "hashKey";
+    long delta = 1;
+    Long result = hashOps.increment(key, hashKey, delta);
+    assertThat(result).isEqualTo(1);
+
+    String result2 = (String) hashOps.get(key, hashKey);
+    assertThat(result2).isEqualTo("1");
+  }
+
 }
