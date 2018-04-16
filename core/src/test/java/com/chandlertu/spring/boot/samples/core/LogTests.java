@@ -15,7 +15,9 @@ public class LogTests {
 
   @Test
   public void test() {
-    logger.debug("message");
+    while (true) {
+      logger.info("message");
+    }
   }
 
 }
